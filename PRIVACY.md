@@ -1,0 +1,1 @@
+No telemetry; no background network. Sharing via Google Form is manual/optional. Generated 2025-09-15.

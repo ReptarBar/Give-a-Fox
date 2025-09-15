@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Ask a Fox ToolKit",
+  "version": "0.1.3",
+  "description": "Ask a Fox ToolKit: Firefox fixes, volunteer tools, and a friendly Thunderbird preview for the Reply-a-thon.",
+  "author": "Michael ‘ThunderBard’ Ellis",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Ask a Fox ToolKit"
+  },
+  "icons": {
+    "16": "media/icon-16.png",
+    "32": "media/icon-32.png",
+    "48": "media/icon-48.png",
+    "128": "media/icon-128.png",
+    "256": "media/icon-256.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "clipboardWrite",
+    "browsingData",
+    "downloads"
+  ],
+  "background": {
+    "scripts": ["sw.js"],
+    "service_worker": "sw.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "pages/options.html",
+    "open_in_tab": false
+  },
+  "host_permissions": []
+}

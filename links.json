@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "updated": "2025-09-15",
+  "links": [
+    {
+      "id": "sumo-firefox",
+      "title": "SUMO: Firefox Support",
+      "url": "https://support.mozilla.org/products/firefox"
+    },
+    {
+      "id": "sumo-thunderbird",
+      "title": "SUMO: Thunderbird Support",
+      "url": "https://support.mozilla.org/products/thunderbird"
+    },
+    {
+      "id": "thunderbird-download",
+      "title": "Download Thunderbird",
+      "url": "https://www.thunderbird.net/"
+    },
+    {
+      "id": "atn-home",
+      "title": "Explore Thunderbird Add-ons",
+      "url": "https://addons.thunderbird.net/"
+    },
+    {
+      "id": "metrics",
+      "title": "Event Metrics Dashboard (organizers)",
+      "url": "https://lookerstudio.google.com/u/0/reporting/f5d29d7e-6613-41d9-a102-9d9a92036647/page/p_55ncc0jlrd"
+    }
+  ]
+}

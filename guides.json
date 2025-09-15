@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "updated": "2025-09-15",
+  "guides": [
+    {
+      "id": "tb-preview-tab",
+      "title": "Meet Thunderbird — Firefox’s trusted companion",
+      "body": "If you enjoy supporting Firefox users, you can help Thunderbird users too.",
+      "links": [
+        {
+          "label": "Download Thunderbird",
+          "link_id": "thunderbird-download"
+        },
+        {
+          "label": "Explore Thunderbird Add-ons",
+          "link_id": "atn-home"
+        }
+      ]
+    }
+  ]
+}

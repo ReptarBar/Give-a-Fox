@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>Ask a Fox ToolKit</title><link rel="stylesheet" href="popup.css"/></head>
+<body><header><img src="../media/icon-32.png" alt="" width="24" height="24"/><h1>Ask a Fox ToolKit</h1></header>
+<nav class="tabs" role="tablist" aria-label="Ask a Fox tabs">
+<button role="tab" data-tab="fixes" aria-selected="true" aria-controls="tab-fixes" class="active" tabindex="0">Firefox Fixes</button>
+<button role="tab" data-tab="volunteer" aria-controls="tab-volunteer" tabindex="-1">Volunteer Tools</button>
+<button role="tab" data-tab="tb" aria-controls="tab-tb" tabindex="-1">Thunderbird</button></nav>
+<main>
+<section id="tab-fixes" role="tabpanel" aria-labelledby="fixes" class="tab active">
+<div class="grid">
+<div class="card action"><div class="card-top"><span class="icon">⟳</span><h3>Reload (bypass cache)</h3></div><p class="muted">Force a fresh load of this tab without cached assets.</p><button class="btn primary" id="btn-reload">Run</button></div>
+<div class="card action"><div class="card-top"><span class="icon">ℹ</span><h3>Open about:support</h3></div><p class="muted">Quick access to troubleshooting info.</p><button class="btn" id="btn-about-support">Open</button></div>
+<div class="card action"><div class="card-top"><span class="icon">👤</span><h3>Open about:profiles</h3></div><p class="muted">Manage and inspect profiles.</p><button class="btn" id="btn-about-profiles">Open</button></div>
+<div class="card action"><div class="card-top"><span class="icon">📋</span><h3>Copy environment</h3></div><p class="muted">Copy app version, OS, and UA to clipboard.</p><button class="btn" id="btn-copy-env">Copy</button></div>
+<div class="card action"><div class="card-top"><span class="icon">📸</span><h3>Screenshot & save</h3></div><p class="muted">Capture the visible tab and save a PNG.</p><button class="btn" id="btn-screenshot">Capture</button></div>
+<div class="card action"><div class="card-top"><span class="icon">🧹</span><h3>Clear cache (all)</h3></div><p class="muted">Remove cached files to resolve stale states.</p><button class="btn" id="btn-clear-cache">Clear</button></div>
+</div><p class="foot small">Thanks for helping Firefox shine brighter! 🎉 <a href="#" id="go-tb">Learn about Thunderbird »</a></p>
+</section>
+<section id="tab-volunteer" role="tabpanel" aria-labelledby="volunteer" class="tab">
+<div class="card kpis" id="mini-dashboard" aria-live="polite">
+<div class="kpi"><span class="kpi-icon">🛠</span><div><div class="kpi-label">Fixes run</div><div class="kpi-value" id="kpi-fixes">0</div></div></div>
+<div class="kpi"><span class="kpi-icon">📸</span><div><div class="kpi-label">Screenshots</div><div class="kpi-value" id="kpi-shots">0</div></div></div>
+<div class="kpi"><span class="kpi-icon">📋</span><div><div class="kpi-label">Templates copied</div><div class="kpi-value" id="kpi-templates">0</div></div></div>
+<div class="kpi"><span class="kpi-icon">🦊</span><div><div class="kpi-label">TB tab opens</div><div class="kpi-value" id="kpi-tb">0</div></div></div>
+</div>
+<div class="card" id="share-controls"><h3 style="margin:0 0 6px">Share your stats (optional)</h3>
+<p class="muted" id="share-note">Anonymous & manual. Opens a prefilled Google Form for you to review and submit.</p>
+<div class="row"><button class="btn" id="btn-share-form">Share via Google Form</button><button class="btn" id="btn-copy-json">Copy my stats (JSON)</button><button class="btn" id="btn-view-dashboard">View program dashboard</button></div>
+<p class="small" id="last-shared">Last shared: never</p></div>
+<div id="templates"></div><div class="links" id="links"></div>
+<div class="tools"><button class="btn" id="btn-bug-report">Report an issue</button></div>
+<p class="foot small">Your replies strengthen the Firefox community.</p></section>
+<section id="tab-tb" role="tabpanel" aria-labelledby="tb" class="tab"><div id="tb-preview"></div></section>
+<div id="toast" role="status" aria-live="polite"></div></main><script src="popup.js"></script></body></html>

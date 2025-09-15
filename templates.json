@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "updated": "2025-09-15",
+  "templates": [
+    {
+      "id": "ff-cache-bypass",
+      "title": "Reload bypassing cache",
+      "body": "Try a hard reload to bypass cached resources. In Ask a Fox ToolKit, click **Reload (bypass cache)**, then test the site again."
+    },
+    {
+      "id": "ff-clear-site-data",
+      "title": "Clear site data for current site",
+      "body": "Clearing cookies/storage for just this site can reset a stuck state. Use **Clear site data (this origin)** in Ask a Fox ToolKit, then reload."
+    },
+    {
+      "id": "meta-thanks",
+      "title": "Thank participants",
+      "body": "Thanks for helping during the Reply‑a‑thon! Your support keeps Firefox strong. If you’d like to help Thunderbird users too, open the **Thunderbird** tab in Ask a Fox ToolKit."
+    }
+  ]
+}
